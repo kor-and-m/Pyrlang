@@ -35,7 +35,7 @@ class NetKernel(GenServer):
         node.register_name(self, Atom('net_kernel'))
 
     @staticmethod
-    def is_auth():
+    def is_auth(_params=None):
         return Atom('yes')
 
 
